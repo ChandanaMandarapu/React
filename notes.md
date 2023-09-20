@@ -4,7 +4,14 @@ React is a widely-used JavaScript library for building user interfaces in web ap
 
 ## Components in React
 
+Components are independent and reusable bits of code. They serve the same purpose as Js functions but work in isolation and return HTML
+
 At the core of React are components. Components are the building blocks of your application's user interface. They are like reusable Lego pieces that you can assemble to create your web app.
+
+## JSX
+
+JSX allows us to write HTML in React.
+JSX makes it easier to write and add HTML in React.
 
 A typical React component starts with a JavaScript function. This function returns JSX (JavaScript XML), which looks like HTML but allows you to incorporate JavaScript expressions within it. JSX provides a template for defining how your component should appear.
 
@@ -20,6 +27,18 @@ function App() {
 }
 ```
 In this example, App is a component that renders a heading and a paragraph.
+
+## JSX Rules
+
+1. JSX expression should have one parent Element. Whenever you're returning more than one element you have to wrap that in a single parent tag
+
+2. Close all of your tags in React (JSX) like img etc
+
+3. class keyword is reserved in React instead we can use className to give for a element
+
+## Expressions in JSX
+
+With JSX you can write expressions inside curly braces. The expression can be a React variable, or property or any other valid JS expression. JSX will execute th expression and return the result
 
 ## Rendering Data with JSX
 
@@ -43,3 +62,11 @@ Here, the {name} within the JSX is a JavaScript expression that evaluates to the
 In a typical React project, you'll have an index.js file where you import and render your main component, often called App. This component serves as the entry point to your application.
 
 Additionally, it's common practice to organize your styles separately in a file like index.css. You can use inline CSS styles within your JSX if needed, but for larger projects, it's recommended to keep your styles in separate CSS files to maintain clarity and organization.
+
+## Lists
+
+In React, you will render lists with some type of loop. The Javascript map() array method is generally the preferred method
+
+## Props
+
+Props are arguments passed into React components. Props are passed to components via HTML attributes
