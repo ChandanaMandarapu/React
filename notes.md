@@ -82,3 +82,13 @@ The state is a built-in React object that is used to contain data or information
 ## HOOKS
 
 Hooks are a new addition in React they let you use state and other React features without writing a class.
+
+## useEffect()
+
+The useEffect Hook allows you to perform side effects in your componenets. Some examples of side effects are: fetching data, directly updating the DOM.
+
+When component renders for the first time it will execute all the code inside useEffect()
+
+anytime we do a side effect all things happen at same time in the useEffect
+
+We cant put useEffect in the conditional statements. React hooks must be called in the exact same order in every component render
