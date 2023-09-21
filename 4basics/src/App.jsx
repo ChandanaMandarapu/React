@@ -3,6 +3,22 @@ import Add from "./components/Add";
 import Multiply from "./components/Multiply";
 import Lists from "./components/lists";
 import Props from "./components/Props";
+import Password from "./components/Password";
+import Cart from "./components/Cart";
+import "./index.css"
+import Event from "./components/Event";
+const styles = {
+  color: "white",
+  backgroundColor : "crimson",
+}
+const Copy = ( ) => {
+  const copyHandler = () => {
+      alert("Yo stop stealing my content")
+  }
+  return <>
+  <p onCopy={copyHandler}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, vitae?</p>
+  </>
+}
 
 function App() {
   return (
@@ -10,6 +26,8 @@ function App() {
       <Add />
       <Multiply />
       <Lists />
+      <Password isValid={true} />
+      <Cart />
       <Props 
         img = "https://lh3.googleusercontent.com/ogw/AKPQZvytz0mMMrmBzi4CXguLNDBCIWm3Kk6CdYTtNQJz=s32-c-mo"
         name = "Chandana"
@@ -27,8 +45,12 @@ function App() {
           <label htmlFor="name">Name</label>
           <input type="text" />
         </form>
+        {/* inline css */}
+        <h1 style={{color: "white",backgroundColor: "black"}}>Hello Im React</h1>
+        <h2 style = {{color: styles.color, backgroundColor: styles.backgroundColor}}>Seperate styles</h2>
 
-        
+        <Event />
+        <Copy />
       </section>
     </>
   );

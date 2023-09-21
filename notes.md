@@ -70,3 +70,15 @@ In React, you will render lists with some type of loop. The Javascript map() arr
 ## Props
 
 Props are arguments passed into React components. Props are passed to components via HTML attributes
+
+## Conditional Rendering
+
+Conditional rendering in react works the sameway conditions work in JavaScript. Use Javascript operators like if or the conditional operator to create elements representing the current state and let React update the UI to match them
+
+## STATE
+
+The state is a built-in React object that is used to contain data or information about the component. A component's state can change over time; whenever it changes the component re-renders
+
+## HOOKS
+
+Hooks are a new addition in React they let you use state and other React features without writing a class.
