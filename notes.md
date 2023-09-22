@@ -86,9 +86,12 @@ Hooks are a new addition in React they let you use state and other React feature
 ## useEffect()
 
 The useEffect Hook allows you to perform side effects in your componenets. Some examples of side effects are: fetching data, directly updating the DOM.
-
 When component renders for the first time it will execute all the code inside useEffect()
-
 anytime we do a side effect all things happen at same time in the useEffect
-
 We cant put useEffect in the conditional statements. React hooks must be called in the exact same order in every component render
+
+## What is Prop Drilling in React?
+
+Prop drilling is like passing a note from one friend to another through a group of friends. Imagine you have a main friend (the parent component) who has important information (data) and wants to share it with a friend further down the chain (a child component). But, there are some other friends in between (intermediary components) who don't need the information but help pass it along. This is how data moves from the top-level component to deeper components in a React application.
+
+For small projects, prop drilling works just fine. However, for larger and more complicated projects, it can become a bit tedious. In such cases, you might explore other methods like the Context API or state management libraries to make sharing data easier.
