@@ -97,3 +97,15 @@ We cant put useEffect in the conditional statements. React hooks must be called 
 
 Import createContext method from react 
 and useContext hook
+
+## useContext()
+
+React Context is a way to manage state globally. It can be used together with the useState Hook to share state between deeply nested components more easily than useState alone.
+
+## useReducer()
+
+useReducer is a hook in React that is similar to useState, but it is designed for more complex state objects or state transitions that involve multiple sub-values. It allows you to manage state in a functional, Immutable way.
+
+## useRef()
+
+useRef is a hook in React that allows you to access the properties of a DOM element. It is useful when you need to access the value of an element,or the current dimensions of an element.
