@@ -8,9 +8,9 @@ const Context = () => {
   return (
     // wrap our component into provider component
     <div>
-        <Data Provider value ={name}>
+        <Data.Provider value ={name}>
         <Three />
-      </Data>
+      </Data.Provider>
     </div>
   )
 }
