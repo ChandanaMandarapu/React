@@ -92,3 +92,8 @@ When component renders for the first time it will execute all the code inside us
 anytime we do a side effect all things happen at same time in the useEffect
 
 We cant put useEffect in the conditional statements. React hooks must be called in the exact same order in every component render
+
+## context Api
+
+Import createContext method from react 
+and useContext hook

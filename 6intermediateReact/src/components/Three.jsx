@@ -1,8 +1,15 @@
 // import React from 'react'
-
-const Three = ({name}) => {
+import { Data } from "./Context"
+const Three = () => {
   return (
-    <div>this data coming from one.jsx{name}</div>
+    <div>
+
+      <Data.Consumer>
+        {(name) => {
+          return <h1>My name is {name}</h1>
+        }}
+      </Data.Consumer>
+    </div>
   )
 }
 

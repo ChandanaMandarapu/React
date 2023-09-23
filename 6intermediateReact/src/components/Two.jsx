@@ -1,11 +1,10 @@
 // import React from 'react'
-import Three from "./Three"
-const Two = ({name}) => {
+// import Three from "./Three"
+const Two = () => {
     console.log(name)
   return (
     <div>
-        Two
-        <Three name = {name} />
+        <h2>Two</h2>
     </div>
   )
 }
