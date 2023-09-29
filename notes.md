@@ -89,8 +89,6 @@ The useEffect Hook allows you to perform side effects in your componenets. Some 
 When component renders for the first time it will execute all the code inside useEffect()
 anytime we do a side effect all things happen at same time in the useEffect
 We cant put useEffect in the conditional statements. React hooks must be called in the exact same order in every component render
-
-<<<<<<< HEAD
 We cant put useEffect in the conditional statements. React hooks must be called in the exact same order in every component render
 
 ## context Api

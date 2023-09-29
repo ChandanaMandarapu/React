@@ -8,6 +8,7 @@ function App() {
   const [value,setValue] = useState(0)
 
   useEffect(() => {
+    // when the component renders for the first time it executes the code inside the function
     console.log("Hello")
     // side effect
     document.title = `Increment(${value})`

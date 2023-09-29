@@ -1,6 +1,6 @@
 // import React from 'react'
 import { useRef } from "react"
-import { useState,useEffect } from "react"
+import useCustomHooks from "./useCustomHooks"
 const Ref = () => {
     const inputElement = useRef(null)
 
@@ -12,12 +12,7 @@ const Ref = () => {
     inputElement.current.style.color = "white"
     inputElement.current.style.padding = "6px"
 }
-const [data,setData] = useState(null)
-useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos")
-    .then((r) => r.json())
-    .then((d) => setData(d))
-})
+const [data] = useCustomHooks("https://jsonplaceholder.typicode.com.todos")
   return (
     <div>
         <input type="text" ref={inputElement}/>
