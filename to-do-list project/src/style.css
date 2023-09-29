@@ -3,24 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  background: rgb(148, 147, 150);
-  color: #111;
+  background: #121212;
+  color: #ffffff;
   height: 100vh;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 1s ease;
 }
+
 .container {
-  background-color: #333;
+  background-color: #333333;
   padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease;
 }
+
 input {
   padding: 15px;
   border: none;
   outline: none;
-  background-color: rgb(127, 123, 129);
+  background-color: #555555;
   width: 300px;
   margin-right: 10px;
   color: whitesmoke;
@@ -29,28 +36,62 @@ input {
 
 button {
   border-radius: 100px;
-  background-color: rgb(85, 82, 85);
+  background-color: #777777;
   padding: 6px;
   border: none;
   outline: none;
   padding: 10px 20px;
   cursor: pointer;
   color: white;
+  font-weight: bold;
 }
+
 .todos-list {
   margin-top: 3rem;
 }
+
 .todo {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(213, 212, 214);
+  background-color: rgb(238, 238, 241);
+  color: black;
   padding: 7px 20px;
   margin: 10px;
   font-size: 1.2rem;
+  animation: slideUp 0.5s ease-in-out; /* Slide-up animation for each task */
 }
-.close {
-  padding: 5px 10px;
-  cursor: pointer;
+
+.todo:hover {
+  background-color: #ccc;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
