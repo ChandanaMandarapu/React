@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(148, 147, 150);
+  color: #111;
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: #333;
+  padding: 50px;
+}
+input {
+  padding: 15px;
+  border: none;
+  outline: none;
+  background-color: rgb(127, 123, 129);
+  width: 300px;
+  margin-right: 10px;
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+
+button {
+  border-radius: 100px;
+  background-color: rgb(85, 82, 85);
+  padding: 6px;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+}
+.todos-list {
+  margin-top: 3rem;
+}
+.todo {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(213, 212, 214);
+  padding: 7px 20px;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+.close {
+  padding: 5px 10px;
+  cursor: pointer;
+}
