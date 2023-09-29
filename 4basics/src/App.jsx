@@ -7,17 +7,29 @@ import Password from "./components/Password";
 import Cart from "./components/Cart";
 import "./index.css"
 import Event from "./components/Event";
+import Conditionals from "./components/Conditionals";
+
 const styles = {
   color: "white",
   backgroundColor : "crimson",
 }
-const Copy = ( ) => {
+const Copy = () => {
   const copyHandler = () => {
       alert("Yo stop stealing my content")
   }
   return <>
   <p onCopy={copyHandler}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, vitae?</p>
   </>
+}
+const Move = () =>{
+  const moveHandler = () => {
+    console.log("You moved on me")
+  }
+  return <>
+  <p onMouseMove={moveHandler}>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, voluptatibus.
+    </p>
+    </>
 }
 
 function App() {
@@ -38,7 +50,7 @@ function App() {
         </Props>
       <section>
         <h1>Hello Im learning React 💜</h1>
-        <p>This is a paragraph :)</p>
+        <p>This is a paragraph :</p>
         {/* closing tag */}
         <img src="" alt="" />
         <form>
@@ -51,6 +63,8 @@ function App() {
 
         <Event />
         <Copy />
+        <Conditionals isValid = {19}/>
+        <Move />
       </section>
     </>
   );

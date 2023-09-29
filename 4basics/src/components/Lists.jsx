@@ -5,6 +5,7 @@
 const Lists = () => {
     // Example 1
     const numbers = [1, 2, 3, 4, 5];
+    const nums = [23,56,77,43]
     // Exmple 2
     const userInfo = [
         {
@@ -22,6 +23,11 @@ const Lists = () => {
             email: "chandu23@gmail.com",
             location: "India"
         },
+        {
+          username: "pallavi",
+          email: "pallavi@gmail.com",
+          location: "Paris"
+        }
     ]
     return (
       <>
@@ -35,6 +41,11 @@ const Lists = () => {
                 <li>{user.username}</li>
                 <li>{user.email}</li>
                 <li>{user.location}</li>
+            </ul>
+        ))}
+        {nums.map(num => (
+          <ul key = {Math.random() *10}>
+            <li>{num}</li>
             </ul>
         ))}
       </>
