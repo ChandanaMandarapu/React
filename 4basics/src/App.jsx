@@ -1,7 +1,7 @@
 // import React from "react";
 import Add from "./components/Add";
 import Multiply from "./components/Multiply";
-import Lists from "./components/lists";
+import Lists from "./components/Lists";
 import Props from "./components/Props";
 import Password from "./components/Password";
 import Cart from "./components/Cart";
