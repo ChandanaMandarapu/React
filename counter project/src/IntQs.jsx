@@ -1,4 +1,5 @@
 // import React from 'react'
+// interview quesiton of react
 import { useState } from "react"
 const IntQs = () => {
     const [count,setCount] = useState(0)
