@@ -1,4 +1,4 @@
-import Hello from "./Basic"
+import Hello from "./components/Basic"
 function App() {
   const username = "Chandana Mandarapu"
 
