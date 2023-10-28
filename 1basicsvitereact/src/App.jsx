@@ -1,6 +1,7 @@
 import Hello from "./components/Basic"
 import Lists from "./components/Lists"
 import Props from "./components/Props"
+import Render from "./components/Render"
 function App() {
   const username = "Chandana Mandarapu"
 
@@ -18,7 +19,7 @@ function App() {
     >
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta placeat odio quidem repellendus impedit perferendis repudiandae est obcaecati amet perspiciatis! Sapiente, eius ullam!</p>
     </Props>
-
+    <Render />
    </>
   )
 }
