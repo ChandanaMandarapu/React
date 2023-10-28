@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+}
+
+body{
+  height: 100vh;
+  background-image: linear-gradient(to right,rgb(1, 255, 162) 0%, rgb(5, 192, 255) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  background-color: #f3fffe;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50rem;
+  height: 30rem;
+  box-shadow: 0.5px 0.5px 1px 1px rgb(255,255,223);
+}
+.card-image{
+  background: url('https://media.istockphoto.com/id/691684632/photo/mount-cook-and-lake-matheson-new-zealand-with-milky-way.jpg?s=612x612&w=0&k=20&c=Xywafkicl65lrJy9bxt_Wag-xxYd4DZghIUC4p8adF8=');
+  background-position: center;
+  background-size: cover;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  font-size: 1rem;
+  padding: 10px;
+  margin: 5px;
+  width: 20rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+}
+.error{
+  color: red;
+}
+.submit-btn{
+  width: 80%;
+  margin-top: 20px;
+  background-color: transparent;
+  background-color: rgb(20, 181, 234);
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
