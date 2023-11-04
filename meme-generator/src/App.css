@@ -33,22 +33,35 @@ body {
 
 .form {
   display: grid;
-  grid-template: 40px 40px / 1fr 1fr;
+  place-items: center; /* Centering the form */
   gap: 17px;
+  max-width: 400px; /* Limiting form width */
+  margin: 0 auto; /* Centering form */
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
 }
 
 .form--input {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 5px;
+  width: 100%;
+  height: 40px;
   border: 1px solid #D5D4D8;
+  border-radius: 5px;
   text-indent: 5px;
 }
 
 .form--button {
-  grid-column: 1 / -1;
+  width: 100%;
+  height: 40px;
+  border: none;
   border-radius: 5px;
   background: linear-gradient(90.41deg, #333333 1.14%, #666 100%);
   color: white;
-  border: none;
   cursor: pointer;
+}
+
+.meme--image {
+  max-width: 300px;
+  display: block;
+  margin: 20px auto; /* Centering meme image */
 }
