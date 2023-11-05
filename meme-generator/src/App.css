@@ -3,15 +3,20 @@
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  background-color: #222;
+}
+
+main {
+  padding: 36px;
 }
 
 .header {
   display: flex;
   align-items: center;
   height: 65px;
-  background: linear-gradient(90deg, #333 1.18%, #565656 100%);
+  background: linear-gradient(90deg, #333 1.18%, #555 100%);
   color: white;
   padding: 20px;
 }
@@ -33,35 +38,82 @@ body {
 
 .form {
   display: grid;
-  place-items: center; /* Centering the form */
+  grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
-  max-width: 400px; /* Limiting form width */
-  margin: 0 auto; /* Centering form */
-  padding: 20px;
-  background: #fff;
-  border-radius: 10px;
+  margin-bottom: 17px;
 }
 
 .form--input {
-  width: 100%;
-  height: 40px;
-  border: 1px solid #D5D4D8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 5px;
+  border: 1px solid #D5D4D8;
   text-indent: 5px;
 }
 
 .form--button {
-  width: 100%;
-  height: 40px;
-  border: none;
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
   border-radius: 5px;
-  background: linear-gradient(90.41deg, #333333 1.14%, #666 100%);
+  background: linear-gradient(90.41deg, #333 1.14%, #555 100%);
   color: white;
+  border: none;
   cursor: pointer;
 }
 
+/* ... (previous CSS code remains unchanged) ... */
+
+.meme {
+  position: relative;
+  width: 500px; /* Set a fixed width for the meme container */
+  margin: 0 auto; /* Center the meme container */
+  overflow: hidden; /* Ensure text doesn't overflow */
+}
+
 .meme--image {
-  max-width: 300px;
   display: block;
-  margin: 20px auto; /* Centering meme image */
+  width: 100%; /* Adjust the image size */
+  border-radius: 3px;
+  transition: transform 0.3s ease-in-out; /* Basic image hover animation */
+}
+
+.meme--text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+  transition: transform 0.3s ease-in-out; /* Text hover animation */
+}
+
+.meme--text.top {
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+.meme--text.bottom {
+  bottom: 0;
+  transform: translate(-50%, -100%);
+}
+
+/* Add hover effects for both image and text */
+.meme:hover .meme--image {
+  transform: scale(1.1);
+}
+
+.meme:hover .meme--text {
+  transform: translateY(-10%);
 }
