@@ -59,21 +59,18 @@ main {
   border: none;
   cursor: pointer;
 }
-
-/* ... (previous CSS code remains unchanged) ... */
-
 .meme {
   position: relative;
-  width: 500px; /* Set a fixed width for the meme container */
-  margin: 0 auto; /* Center the meme container */
-  overflow: hidden; /* Ensure text doesn't overflow */
+  width: 500px;
+  margin: 0 auto; 
+  overflow: hidden; 
 }
 
 .meme--image {
   display: block;
-  width: 100%; /* Adjust the image size */
+  width: 100%; 
   border-radius: 3px;
-  transition: transform 0.3s ease-in-out; /* Basic image hover animation */
+  transition: transform 0.3s ease-in-out; 
 }
 
 .meme--text {
@@ -96,24 +93,14 @@ main {
     0 -2px 0 #000,
     -2px 0 0 #000,
     2px 2px 5px #000;
-  transition: transform 0.3s ease-in-out; /* Text hover animation */
+  transition: transform 0.3s ease-in-out; 
 }
 
 .meme--text.top {
   top: 0;
-  transform: translate(-50%, 0);
 }
 
 .meme--text.bottom {
   bottom: 0;
-  transform: translate(-50%, -100%);
 }
 
-/* Add hover effects for both image and text */
-.meme:hover .meme--image {
-  transform: scale(1.1);
-}
-
-.meme:hover .meme--text {
-  transform: translateY(-10%);
-}
