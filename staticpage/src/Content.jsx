@@ -1,20 +1,37 @@
-// import React from 'react'
+import { useState } from 'react';
 
-const Content = () => {
+const MoodEntryForm = ({ onAddMoodEntry }) => {
+  const [selectedMood, setSelectedMood] = useState('');
+  const [notes, setNotes] = useState('');
+
+  const handleAddMoodEntry = () => {
+    const newEntry = {
+      date: new Date().toLocaleDateString(),
+      mood: selectedMood,
+      notes: notes,
+    };
+    onAddMoodEntry(newEntry);
+    setSelectedMood('');
+    setNotes('');
+  };
+
   return (
     <div>
-        <main>
-        <h1 className="main--title">Fun facts about React</h1>
-            <ul className="main--facts">
-                <li>Was first released in 2013</li>
-                <li>Was originally created by Jordan Walke</li>
-                <li>Has well over 100K stars on GitHub</li>
-                <li>Is maintained by Facebook</li>
-                <li>Powers thousands of enterprise apps, including mobile apps</li>
-            </ul>
-        </main>
+      <h2>Add Mood Entry</h2>
+      <label>Select Mood:</label>
+      <select onChange={(e) => setSelectedMood(e.target.value)} value={selectedMood}>
+        <option value="">-- Select Mood --</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="neutral">Neutral</option>
+      </select>
+      <br />
+      <label>Notes:</label>
+      <textarea onChange={(e) => setNotes(e.target.value)} value={notes}></textarea>
+      <br />
+      <button onClick={handleAddMoodEntry}>Add Entry</button>
     </div>
-  )
-}
+  );
+};
 
-export default Content
+export default MoodEntryForm;

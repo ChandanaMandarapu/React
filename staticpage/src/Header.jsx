@@ -1,18 +1,27 @@
-// import React from 'react'
+import { useState, useEffect } from 'react';
+import Content from './Content';
+import MoodHistory from './MoodHistory';
 
-const Header = () => {
+const MoodTracker = () => {
+  const [moodEntries, setMoodEntries] = useState([]);
+
+  useEffect(() => {
+    const storedMoodEntries = JSON.parse(localStorage.getItem('moodEntries')) || [];
+    setMoodEntries(storedMoodEntries);
+  }, []);
+
+  const addMoodEntry = (newEntry) => {
+    const updatedEntries = [...moodEntries, newEntry];
+    setMoodEntries(updatedEntries);
+    localStorage.setItem('moodEntries', JSON.stringify(updatedEntries));
+  };
+
   return (
-    <>
-      <nav>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRECfdTqlVrG03aR41yIfxUuQb1IgLN-TzsQ&usqp=CAU"
-          alt="" className="nav--icon"
-        />
-        <h3 className="nav--logo_text">ReactFacts</h3>
-        <h4 className="nav--title">React Course - Project 1</h4>
-      </nav>
-    </>
+    <div>
+      <Content onAddMoodEntry={addMoodEntry} />
+      <MoodHistory moodEntries={moodEntries} />
+    </div>
   );
 };
 
-export default Header;
+export default MoodTracker;
