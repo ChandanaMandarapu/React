@@ -65,3 +65,41 @@ function App() {
 }
 
 export default App;
+// import React, { useState } from 'react';
+// import SearchBar from './SearchBar';
+// import MoodVisualizer from './MoodVisualizer';
+// import LyricExplorer from './LyricExplorer';
+// import axios from 'axios'; // Import axios for API calls
+
+// const App = () => {
+//   const [mood, setMood] = useState('');
+//   const [lyrics, setLyrics] = useState('');
+
+//   const handleSearch = async (searchTerm) => {
+//     try {
+//       // Fetch lyrics from the LyricAPI
+//       const response = await axios.get(`https://api.lyricapi.com/lyrics?search=${searchTerm}`);
+//       const lyrics = response.data.lyrics;
+
+//       // Perform sentiment analysis (dummy example)
+//       const mood = MoodAnalyzer.analyze(lyrics); // Replace with actual sentiment analysis logic
+
+//       // Update state accordingly
+//       setMood(mood);
+//       setLyrics(lyrics);
+//     } catch (error) {
+//       console.error('Error handling search:', error);
+//     }
+//   };
+
+//   return (
+//     <div className="app">
+//       <h1>Song Mood Visualizer</h1>
+//       <SearchBar onSearch={handleSearch} />
+//       <MoodVisualizer mood={mood} />
+//       <LyricExplorer lyrics={lyrics} />
+//     </div>
+//   );
+// };
+
+// export default App;
