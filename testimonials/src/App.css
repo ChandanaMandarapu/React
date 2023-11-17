@@ -19,7 +19,7 @@ body {
   border-radius: 10px;
   padding: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #f0fdfe;
+  background-color: papayawhip;
 }
 
 .testimonials-quote {
@@ -44,7 +44,7 @@ body {
 .testimonials-nav button {
   padding: 10px 20px;
   border: none;
-  background-color: skyblue;
+  background-color: brown;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
@@ -53,7 +53,7 @@ body {
 }
 
 .testimonials-nav button:hover {
-  background-color: #037680;
+  background-color: rgb(152, 40, 40);
 }
 
 .testimonials-nav button:active {
