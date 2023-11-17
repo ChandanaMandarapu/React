@@ -6,15 +6,15 @@ function Testimonials() {
   const testimonials = [
     {
       quote: "This is the best product I've ever used!",
-      author: "Jane Doe",
+      author: "Pallavi Verma",
     },
     {
       quote: "I highly recommend this product to everyone!",
-      author: "John Smith",
+      author: "Karthik Iyer",
     },
     {
       quote: "This product has completely changed my life!",
-      author: "Bob Johnson",
+      author: "Maha kulkarni",
     },
   ];
 
