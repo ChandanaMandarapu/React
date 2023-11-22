@@ -1,16 +1,15 @@
 import './App.css'
-
+import Header from './Header'
+import Content from './Content'
+import Footer from './Footer'
 function App() {
-  const handleNameChange = () => {
-    const names = ["krishna","ram","parvati"]
-    const int = Math.floor(Math.random() * 3)
-    return names[int]
-  }
   return (
-    <>
-    <div>Hello {handleNameChange}</div>
+    <div className='App'>
     <App />
-    </>
+    <Header />
+    <Content />
+    <Footer />
+    </div>
   )
 }
 
