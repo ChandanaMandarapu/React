@@ -1,10 +1,9 @@
-// src/App.js
-// import React from 'react';
-import MindMap from './MindMap';
-import Node from './Node';
+
+import React from 'react';
+import MindMap from './components/MindMap';
 import './App.css';
 
-const App = () => {
+function App() {
   return (
     <div className="container">
       <div className="header">
@@ -12,11 +11,9 @@ const App = () => {
       </div>
       <div className="app-content">
         <MindMap />
-        {/* You can add other components or content here */}
-        <Node />
       </div>
     </div>
   );
-};
+}
 
 export default App;
