@@ -1,7 +1,7 @@
-// src/MindMap.js
-import { useState } from 'react';
+
+import React, { useState } from 'react';
 import Node from './Node';
-import './App.css';
+import './MindMap.css';
 
 const MindMap = () => {
   const [nodes, setNodes] = useState([]);
